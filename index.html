@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Exercícios Javascript
+    </title>
+</head>
+
+<body>
+    <header>
+    <h1></h1>
+    </header>
+
+    <main>
+
+        <h1>Exercícios de Lógica de Programação com Javascript</h1>
+        <br><br><br><br>
+        <section class="exercicio1">
+        <h2>Exercício 1</h2>
+        <p>A sequência de Fibonacci é uma série de números em que cada número
+        é a soma dos dois precedentes.</p>
+        <p>Os primeiros números da sequência são:</p>
+        <p>0, 1, 1, 2, 3, 5, 8, 13, 21, 34...</p>
+        <p>Crie uma função que receba um número inteiro positivo n como argumento</p>
+        <p>e retorne o n-ésimo número na sequência de Fibonacci.</p>
+            <div class="formulario1">
+                <input id="ex1" class="numero" placeholder="Digite um número inteiro">
+                <button onclick="enesimoFibonacci()">Retornar</button>
+                <h3 id="resp1"></h3>
+            </div>
+        </section>
+        <br><br>
+        <section class="exercicio2">
+            <h2>Exercício 2</h2>
+            <p>Dada uma frase, escreva uma função que encontre a palavra mais longa presente.</p>
+            <div class="formulario2">
+                <input id="ex2" class="frase" placeholder="Digite uma frase">
+                <button onclick="maiorPalavra()">Retornar</button>
+                <h3 id="resp2"></h3>
+            </div>
+        </section>
+        <br><br>
+        <section class="exercicio3">
+            <h2>Exercício 3</h2>
+            <p>Supondo que a população de um país A seja menor que a população do país B,</p>
+            <p>que a taxa anual de crescimento do país A seja de 2%</p>
+            <p>e que a taxa anual de crescimento do país B seja de 1%,</p>
+            <p>crie uma função que calcule o número de anos necessários</p>
+            <p>para que a população do país A ultrapasse ou iguale a população do país B,</p>
+            <p>mantidas as taxas de crescimento.</p>
+            <div class="formulario3">
+                <input id="popA" class="populacaoA" placeholder="População do país A">
+                <input id="popB" class="populacaoB" placeholder="População do país B">
+                <button onclick="crescimentoPopulacional()">Calcular</button>
+                <h3 id="resp3"></h3>
+            </div>
+        </section>
+        <br><br>
+        <section class="exercicio4">
+            <h2>Exercício 4</h2>
+            <p>Crie uma função que, considerando um número n maior que 1 e menor ou igual a 100, mostre todos os primos entre 2 e n.</p>
+            <div class="formulario4">
+                <input id="ex4" class="numeron" placeholder="Digite um número entre 2 e 100">
+                <button onclick="quantidadePrimos()">Verificar</button>
+                <h3 id="resp4"></h3>
+            </div>
+        </section>
+        <br><br>
+        <section class="exercicio5">
+            <h2>Exercício 5</h2>
+            <p>Para a Mega-Sena:</p>
+            <p>Crie uma função em que o apostador informe a quantidade de números que pretende apostar.</p>
+            <p>A quantidade, obrigatoriamente, deve ser de 6 a 20 números.</p>
+            <p>Considerando que cada aposta de 6 números custa R$5,00, informe o valor total da aposta.</p>
+            <p>Em seguida:</p>
+            <p>Gere uma aposta conforme a quantidade indicada pelo apostador,</p>
+            <p>com números entre 1 e 60, de acordo com a modalidade da loteria.</p>
+            <p>Em seguida:</p>
+            <p>Gere um sorteio de 6 números.</p>
+            <p>Informe se houve premiação ou não.</p>
+            <p>Em caso de premiação, liste quais os acertos e a quantidade de volantes premiados em cada faixa</p>
+            <div class="formulario5">
+                <input id="ex5" class="megasena" placeholder="Digite a quantidade de números:">
+                <button onclick="calcularValor()">Calcular</button>
+                <h3 id="resp5"></h3>
+                <div class="aposta" id="botao-gerar">
+                </div>
+                <h3 id="surpresinha"></h3>
+                <div class="sorteio" id="botao-sortear">
+                </div>
+                <h3 id="result-sorteio"></h3>
+                <div class="apuracao" id="botao-apurar">
+                </div>
+                <h3 id="divulgacao"></h3>
+                <h3 id="sena"></h3>
+                <h3 id="quinas"></h3>
+                <h3 id="quadras"></h3>
+            </div>
+        </section>
+        <br><br>
+        <section class="exercicio6">
+            <h2>Exercício 6</h2>
+            <p>Desenvolva um Jogo de Memória com pares de números de 1 a 10.</p>
+            <p>A disposição dos botões (cartas) embaralhados deve ser 4 x 5.</p>
+            <p>A composição dos valores inicia oculta.</p>
+            <p>Ao clicar no primeiro botão, seu valor é exibido.</p>
+            <p>Ao clicar no segundo botão, caso seja igual ao valor do primeiro,</p>
+            <p>os botões são desabilitados e os valores permanecem exibidos.</p>
+            <p>Caso os valores sejam diferentes, ambos voltam a ter os valores ocultos.</p>
+                <div class="formulario6">
+                    <button id="embaralhar" onclick="carregarJogoMemoria()">Embaralhar</button>
+                    <div class="linha">
+                    <button class="btn1" id="" onclick="verificarIgualdade()"></button>
+                    <button class="btn2" id="" onclick="verificarIgualdade()"></button>
+                    <button class="btn3" id="" onclick="verificarIgualdade()"></button>
+                    <button class="btn4" id="" onclick="verificarIgualdade()"></button>
+                    <button class="btn5" id="" onclick="verificarIgualdade()"></button>
+                    </div>
+                    <div class="linha">
+                    <button class="btn6" id="" onclick="verificarIgualdade()"></button>
+                    <button class="btn7" id="" onclick="verificarIgualdade()"></button>
+                    <button class="btn8" id="" onclick="verificarIgualdade()"></button>
+                    <button class="btn9" id="" onclick="verificarIgualdade()"></button>
+                    <button class="btn10" id="" onclick="verificarIgualdade()"></button>
+                    </div>
+                    <div class="linha">
+                    <button class="btn11" id="" onclick="verificarIgualdade()"></button>
+                    <button class="btn12" id="" onclick="verificarIgualdade()"></button>
+                    <button class="btn13" id="" onclick="verificarIgualdade()"></button>
+                    <button class="btn14" id="" onclick="verificarIgualdade()"></button>
+                    <button class="btn15" id="" onclick="verificarIgualdade()"></button>
+                    </div>
+                    <div class="linha">
+                    <button class="btn16" id="" onclick="verificarIgualdade()"></button>
+                    <button class="btn17" id="" onclick="verificarIgualdade()"></button>
+                    <button class="btn18" id="" onclick="verificarIgualdade()"></button>
+                    <button class="btn19" id="" onclick="verificarIgualdade()"></button>
+                    <button class="btn20" id="" onclick="verificarIgualdade()"></button>
+                    </div>
+                    <h3 id="resp6"></h3>
+                </div>
+        </section>
+        <br><br>
+        <section class="exercicio7">
+            <h2>Exercício 7</h2>
+            <p>Uma equação é de segundo grau na variável se puder ser escrita na forma:</p>
+            <p><strong>ax² + bx + c = 0</strong></p>
+            <p>em que a, b e c são números reais conhecidos e chamados coeficientes</p>
+            <p>sendo a ≠ 0 e x um número real desconhecido ou incógnita</p>
+            <p>(também pode ser denominado variável).</p>
+            <p>As equações de 2º grau são também denominadas Equações Quadráticas.</p>
+            <p>Elabore um algoritmo em que sejam informados os coeficientes:</p>
+            <p>a, b e c</p>
+            <p>Elabore a equação.</p>
+            <p>Determine se a equação é completa ou incompleta.</p>
+            <p>Verifique se há ou não solução no conjunto dos Reais e,</p>
+            <p>em caso positivo, indique quais são as raízes.</p>
+            <div class="formulario7">
+                <h3 id="subtitulo">Coeficientes:</h3>
+                <div>
+                <input id="coeficientea" placeholder="Digite o coeficiente de a">
+                </div>
+                <div>
+                <input id="coeficienteb" placeholder="Digite o coeficiente de b">
+                </div>
+                <div>
+                <input id="coeficientec" placeholder="Digite o coeficiente de c">
+                </div>
+                <button onclick="resolverEquacao2Grau()">Resolver</button>
+                <h3>Equação:</h3>
+                <h4 id="respequacao"></h4>
+                <h4 id="completa"></h4>
+                <h3 id="resp7"></h3>
+            </div>
+        </section>
+        <br><br>
+        <section class="exercicio8">
+            <h2>Exercício 8</h2>
+            <p>As cédulas, ou notas, da segunda família do Real possuem as denominações:
+            <p>R$2,00, R$5,00, R$10,00, R$20,00, R$50,00, R$100,00 e R$200,00.</p>
+            <p>Um caixa eletrônico opera com essas notas e, para saques,</p>
+            <p>o valor é fornecido na menor quantidade possível de cédulas.</p>
+            <p>Crie uma função que receba a quantia desejada pelo usuário</p>
+            <p>e indique o valor facial e a quantidade de cada cédula que</p>
+            <p>será retornada ao cliente.</p>
+            <p>Caso o o valor não permita uma distribuição adequada, indique</p>
+            <p>o valor superior e o valor inferior possíveis mais próximos da quantia desejada,</p>
+            <p>permita uma decisão ao usuário e, em seguida,</p>
+            <p>indique o valor facial e a quantidade de cada cédula que</p>
+            <p>será retornada ao cliente.</p>
+            <div class="formulario8">
+                <input id="saque" class="valordesejado" placeholder="Digite o valor a ser sacado">
+                <button onclick="fornecimentoNotas()">Indicar</button>
+                <h3 id="sugestoes"></h3>
+                <div class="sugerir" id="botao-sugestoes">
+                </div>
+                <h3 id="resp8"></h3>
+                <ul id="lista-cedulas"></ul>
+            </div>
+        </section>
+        <br><br>
+        <section class="exercicio9">
+            <h2>Exercício 9</h2>
+            <p>Elabore uma função que receba:</p>
+            <p>-  capacidade do tanque do automóvel (litros)</p>
+            <p>- a distância a ser percorrida até o destino (km)</p>
+            <p>- a média de consumo do automóvel (km/litro) </p>
+            <p>- o preço médio do combustível a ser utilizado</p>
+            <p>Com esses dados, estime:</p>
+            <p>1. Quantos litros de combustível serão gastos no trajeto.</p>
+            <p>2. Se haverá necessidade de paradas para abastecimento.</p>
+            <p>Em caso positivo:</p>
+            <p>(a) Quantas paradas serão necessárias? </p>
+            <p>(b) Com quantos quilômetros devem ocorrer?</p>
+            <p>Em caso de abastecimento, o tanque deverá ser completo.</p>
+            <p>Ao final, informar também:</p>
+            <p>3. O valor total gasto, inclusive da partida com tanque cheio.</p>
+            <p>4. A quantidade de combustível que restará no tanque.</p>
+            <div class="formulario9">
+                <h3 id="indicadores">Indicadores:</h3>
+                <div>
+                <input id="tanque" placeholder="Capacidade do tanque (litros)">
+                </div>
+                <div>
+                <input id="distancia" placeholder="Distância do destino (km)">
+                </div>
+                <div>
+                <input id="consumo" placeholder="Consumo do veículo (km/litro)">
+                </div>
+                <div>
+                <input id="preco" placeholder="Preço médio do combusível (R$)">
+                </div>
+                <button onclick="calcularCombustivel()">Estimar</button>
+                <h4 id="resp9-1"></h4>
+                <h4 id="resp9-2a"></h4>
+                <h4 id="resp9-2b"></h4>
+                <h4 id="resp9-3"></h4>
+                <h4 id="resp9-4"></h4>
+            </div>
+        </section>
+        <br><br>
+        <section class="exercicio10">
+        <h2>Exercício 10</h2>
+        <p>Esta é uma adaptação do Jogo de dados Craps.</p>
+        <p>O jogador aposta um valor e a banca iguala a aposta e forma o prêmio.</p>
+        <p>São sempre lançados dois dados simultaneamente.</p>
+        <p>No 1º lançamento, se sair 7 ou 11,</p>
+        <p>o apostador recebe o valor total do prêmio</p>
+        <p>e o jogo está encerrado.</p>
+        <p>No 1º lançamento, se sair 2, 3 ou 12,</p>
+        <p>o apostador perde sua aposta</p>
+        <p>e o jogo está encerrado.</p>
+        <p>No 1º lançamento, saindo:</p>
+        <p>4, 5, 6, 8, 9 ou 10,</p>
+        <p>o resultado é guardado para o apostador.</p>
+        <p>A partir do 2º lançamento, até o 11º lançamento.</p>
+        <p>Se sair 7, o apostador perde sua aposta.</p>
+        <p>Se sair o resultado guardado, o apostador recebe o prêmio apostado pela banca.</p>
+        <p>Entretanto, a cada lançamento, o valor total do prêmio é reduzido em 5%.</p>
+        <p>Crie um algoritmo em que:</p>
+        <p>o apostador informe o valor da aposta,</p>
+        <p>seja apresentado o valor total do prêmio</p>
+        <p>bem como o valor quando aplicadas as reduções.</p>
+        <p>Deve constar um botão para simular o lançamento dos dados</p>
+        <p>e a reprodução do resultado.</p>
+        <p>Devem ser reportadas as seguintes mensagens:</p>
+        <p>Os registros de cada jogada, o resultado e o prêmio que estava em jogo.</p>
+        <p>No 1º lançamento:</p>
+        <p>Informar se houve vitória ou derrota e o valor que estava em jogo,</p>
+        <p>ou o número que de deve ser guardado para o apostador.</p>
+        <p>A partir do 2º lançamento:</p>
+        <p>Informar se houve vitória ou derrota ou se o jogo continua.</p>
+        <p>A cada lançamento, havendo vitória ou derrota para o apostador, finalizar o jogo.</p>
+        <p>No 11º lançamento, não havendo resultado de vitória ou derrota,</p>
+        <p>finalizar o jogo e a banca fica com o prêmio.</p>
+
+            <div class="formulario10">
+                <input id="ex10" class="apostador" placeholder="Digite o valor da aposta">
+                <button id="lancar" onclick="jogarCraps()">Lançar</button>
+                <div class="container">
+                    <div class="premiacaoac">
+                        <h2>Valor do Prêmio:</h2>
+                        <button id="valorpremio"></button>
+                    </div>
+                    <div class="dados">
+                        <img id="dadoum" src="imagens/dado0.png" alt="Face do dado 1">
+                        <img id="dadodois" src="imagens/dado0.png" alt="Face do dado 2">
+                    </div>
+                </div>
+                <div class="mensagens">
+                    <h3>Lançamentos:</h3>
+                    <h4 id="lance1"></h4>
+                    <h4 id="lance2"></h4>
+                    <h4 id="lance3"></h4>
+                    <h4 id="lance4"></h4>
+                    <h4 id="lance5"></h4>
+                    <h4 id="lance6"></h4>
+                    <h4 id="lance7"></h4>
+                    <h4 id="lance8"></h4>
+                    <h4 id="lance9"></h4>
+                    <h4 id="lance10"></h4>
+                    <h4 id="lance11"></h4>
+                </div>
+                <h3 id="resp10"></h3>
+            </div>
+        </section>
+        <br><br>
+
+    </main>
+
+    <footer>
+        <h3>Desenvolvido por Edson Faria</h3>
+    </footer>
+
+</body>
+
+</html>

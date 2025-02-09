@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 30px 30px;
+    background-color: #2E424D;
+}
+
+h1 {
+    font-family: "Imprima", serif;
+    font-size: 30px;
+    color: #98DAD9;
+}
+
+/* EXERCÍCIO 1 */
+
+.exercicio1 h2 {
+    font-family: "Imprima", serif;
+    font-size: 24px;
+    color: #98DAD9;
+}
+
+.exercicio1 p {
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    color: #EAEBED;
+    text-align: justify;
+}
+
+.formulario1 {
+    margin-top: 10px;
+}
+
+.formulario1 input {
+    height: 30px;
+    width: 208px;
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.formulario1 button {
+    height: 42px;
+    width: 96px;
+    font-family: "Imprima", serif;
+    font-size: 15px;
+    background-color: #98DAD9;
+    margin-left: 10px;
+}
+
+.formulario1 h3 {
+    margin-top: 5px;
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #98DAD9;
+}
+
+/* EXERCÍCIO 2 */
+
+.exercicio2 h2 {
+    font-family: "Imprima", serif;
+    font-size: 24px;
+    color: #98DAD9;
+}
+
+.exercicio2 p {
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    color: #EAEBED;
+    text-align: justify;
+}
+
+.formulario2 {
+    margin-top: 10px;
+}
+
+.formulario2 input {
+    height: 30px;
+    width: 360px;
+    font-family: "Imprima", serif;
+    font-size: 18px;
+}
+
+.formulario2 button {
+    height: 42px;
+    width: 96px;
+    font-family: "Imprima", serif;
+    font-size: 15px;
+    background-color: #98DAD9;
+    margin-left: 10px;
+}
+
+.formulario2 h3 {
+    margin-top: 5px;
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #98DAD9;
+}
+
+/* EXERCÍCIO 3 */
+
+.exercicio3 h2 {
+    font-family: "Imprima", serif;
+    font-size: 24px;
+    color: #98DAD9;
+}
+
+.exercicio3 p {
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    color: #EAEBED;
+    text-align: justify;
+}
+
+.formulario3 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario3 input {
+    height: 30px;
+    width: 360px;
+    font-family: "Imprima", serif;
+    font-size: 18px;
+}
+
+.formulario3 button {
+    height: 42px;
+    width: 96px;
+    font-family: "Imprima", serif;
+    font-size: 15px;
+    background-color: #98DAD9;
+}
+
+.formulario3 h3 {
+    margin-top: 5px;
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #98DAD9;
+}
+
+/* EXERCÍCIO 4 */
+
+.exercicio4 h2 {
+    font-family: "Imprima", serif;
+    font-size: 24px;
+    color: #98DAD9;
+}
+
+.exercicio4 p {
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    color: #EAEBED;
+    text-align: justify;
+}
+
+.formulario4 {
+    margin-top: 10px;
+}
+
+.formulario4 input {
+    height: 30px;
+    width: 360px;
+    font-family: "Imprima", serif;
+    font-size: 18px;
+}
+
+.formulario4 button {
+    height: 42px;
+    width: 96px;
+    font-family: "Imprima", serif;
+    font-size: 15px;
+    background-color: #98DAD9;
+    margin-left: 10px;
+}
+
+.formulario4 h3 {
+    margin-top: 5px;
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #98DAD9;
+}
+
+/* EXERCÍCIO 5 */
+
+.exercicio5 h2 {
+    font-family: "Imprima", serif;
+    font-size: 24px;
+    color: #98DAD9;
+}
+
+.exercicio5 p {
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    color: #EAEBED;
+    text-align: justify;
+}
+
+.formulario5 {
+    margin-top: 10px;
+}
+
+.formulario5 input {
+    height: 30px;
+    width: 360px;
+    font-family: "Imprima", serif;
+    font-size: 18px;
+}
+
+.formulario5 button {
+    height: 42px;
+    width: 96px;
+    font-family: "Imprima", serif;
+    font-size: 15px;
+    background-color: #98DAD9;
+    margin-left: 10px;
+}
+
+.formulario5 h3 {
+    margin-top: 5px;
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #98DAD9;
+}
+
+.aposta button {
+    height: 42px;
+    width: 96px;
+    font-family: "Imprima", serif;
+    font-size: 15px;
+    background-color: #98DAD9;
+    margin-top: 5px;
+    margin-left: 0;
+}
+
+.sorteio button {
+    height: 42px;
+    width: 96px;
+    font-family: "Imprima", serif;
+    font-size: 15px;
+    background-color: #98DAD9;
+    margin-top: 5px;
+    margin-left: 0;
+}
+
+.apuracao button {
+    height: 42px;
+    width: 96px;
+    font-family: "Imprima", serif;
+    font-size: 15px;
+    background-color: #98DAD9;
+    margin-top: 5px;
+    margin-left: 0;
+}
+
+footer {
+    margin-top: 60px;
+}
+
+footer h3 {
+    font-family: "Imprima", serif;
+    font-size: 15px;
+    background-color: #98DAD9;
+    color: #2E424D;
+    text-align: center;
+    padding: 10px;
+}
+
+/* EXERCÍCIO 6 */
+
+.exercicio6 h2 {
+    font-family: "Imprima", serif;
+    font-size: 24px;
+    color: #98DAD9;
+}
+
+.exercicio6 p {
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    color: #EAEBED;
+    text-align: justify;
+}
+
+.formulario6 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column; /* organiza as linhas verticalmente */
+    gap: 10px; /* espaçamento entre as linhas */
+    align-items: flex-start;
+}
+.linha {
+    display: flex; /* ativa o Flexbox para os botões na linha */
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.formulario6 button {
+    height: 48px;
+    width: 96px;
+    font-family: "Imprima", serif;
+    font-size: 15px;
+    background-color: #98DAD9;
+    margin-left: 0;
+}
+
+.formulario6 h3 {
+    margin-top: 5px;
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #98DAD9;
+}
+
+/* EXERCÍCIO 7 */
+
+.exercicio7 h2 {
+    font-family: "Imprima", serif;
+    font-size: 24px;
+    color: #98DAD9;
+}
+
+.exercicio7 p {
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    color: #EAEBED;
+    text-align: justify;
+}
+
+.formulario7 {
+    margin-top: 10px;
+}
+
+.formulario7 input {
+    height: 30px;
+    width: 240px;
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    margin: 2px;
+}
+
+.formulario7 button {
+    height: 42px;
+    width: 96px;
+    font-family: "Imprima", serif;
+    font-size: 15px;
+    background-color: #98DAD9;
+    margin-left: 0px;
+    margin-top: 4px;
+}
+
+.formulario7 h3 {
+    margin-top: 5px;
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #98DAD9;
+}
+
+.formulario7 h4 {
+    margin-top: 5px;
+    font-family: "Imprima", serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #98DAD9;
+}
+
+/* EXERCÍCIO 8 */
+
+.exercicio8 h2 {
+    font-family: "Imprima", serif;
+    font-size: 24px;
+    color: #98DAD9;
+}
+
+.exercicio8 p {
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    color: #EAEBED;
+    text-align: justify;
+}
+
+.formulario8 {
+    margin-top: 10px;
+}
+
+.formulario8 input {
+    height: 30px;
+    width: 360px;
+    font-family: "Imprima", serif;
+    font-size: 18px;
+}
+
+.formulario8 button {
+    height: 42px;
+    width: 96px;
+    font-family: "Imprima", serif;
+    font-size: 15px;
+    background-color: #98DAD9;
+    margin-left: 10px;
+}
+
+.sugerir button {
+    height: 42px;
+    width: 96px;
+    font-family: "Imprima", serif;
+    font-size: 15px;
+    background-color: #98DAD9;
+    margin-top: 5px;
+    margin-left: 0;
+}
+
+.formulario8 h3 {
+    margin-top: 5px;
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #98DAD9;
+}
+
+.formulario8 ul {
+    margin-top: 5px;
+    margin-left: 20px;
+    font-family: "Imprima", serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #98DAD9;
+}
+
+/* EXERCÍCIO 9 */
+
+.exercicio9 h2 {
+    font-family: "Imprima", serif;
+    font-size: 24px;
+    color: #98DAD9;
+}
+
+.exercicio9 p {
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    color: #EAEBED;
+    text-align: justify;
+}
+
+.formulario9 {
+    margin-top: 10px;
+}
+
+.formulario9 input {
+    height: 30px;
+    width: 252px;
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    margin: 2px;
+}
+
+.formulario9 button {
+    height: 42px;
+    width: 96px;
+    font-family: "Imprima", serif;
+    font-size: 15px;
+    background-color: #98DAD9;
+    margin-top: 4px;
+    margin-left: 0px;
+}
+
+.formulario9 h3 {
+    margin-top: 5px;
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #98DAD9;
+}
+
+.formulario9 h4 {
+    margin-top: 5px;
+    font-family: "Imprima", serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #98DAD9;
+}
+
+/* EXERCÍCIO 10 */
+
+.exercicio10 h2 {
+    font-family: "Imprima", serif;
+    font-size: 24px;
+    color: #98DAD9;
+    margin-top: 12px;
+}
+
+.exercicio10 p {
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    color: #EAEBED;
+    text-align: justify;
+}
+
+.formulario10 {
+    margin-top: 10px;
+}
+
+.formulario10 input {
+    height: 30px;
+    width: 208px;
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.formulario10 button {
+    height: 42px;
+    width: 96px;
+    font-family: "Imprima", serif;
+    font-size: 15px;
+    background-color: #98DAD9;
+    margin-left: 10px;
+}
+
+.premiacaoac button {
+    background-color: #EAEBED;
+    width: 132px;
+    margin-left: 0;
+    font-size: 18px;
+    color: #2E424D;
+    font-weight: bold;
+}
+
+.formulario10 h3 {
+    margin-top: 5px;
+    font-family: "Imprima", serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #98DAD9;
+}
+
+.container {
+    display: flex; /* Cria um layout flexível */
+    align-items: flex-start; /* Alinha os itens no topo */
+    margin-top: 10px;
+}
+
+.mensagens {
+    padding-right: 120px; /* Espaçamento pequeno entre as mensagens e as imagens */
+}
+
+.mensagens h4 {
+    margin-top: 5px;
+    font-family: "Imprima", serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #98DAD9;
+}
+
+.dados {
+    display: flex; /* Cria um layout flexível para as imagens */
+    gap: 10px; /* Espaço entre as imagens */
+    margin-top: 12px;
+    margin-left: 36px;
+}
+
+.dados img {
+    max-width: 100%; /* Tamanho reduzido para as imagens */
+    height: auto; /* Mantém a proporção da imagem */
+}
