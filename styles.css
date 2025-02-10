@@ -295,12 +295,12 @@ footer h3 {
 .formulario6 {
     margin-top: 10px;
     display: flex;
-    flex-direction: column; /* organiza as linhas verticalmente */
-    gap: 10px; /* espaçamento entre as linhas */
+    flex-direction: column;
+    gap: 10px;
     align-items: flex-start;
 }
 .linha {
-    display: flex; /* ativa o Flexbox para os botões na linha */
+    display: flex;
     justify-content: flex-start;
     gap: 10px;
 }
@@ -545,13 +545,13 @@ footer h3 {
 }
 
 .container {
-    display: flex; /* Cria um layout flexível */
-    align-items: flex-start; /* Alinha os itens no topo */
+    display: flex;
+    align-items: flex-start;
     margin-top: 10px;
 }
 
 .mensagens {
-    padding-right: 120px; /* Espaçamento pequeno entre as mensagens e as imagens */
+    padding-right: 120px;
 }
 
 .mensagens h4 {
@@ -563,13 +563,72 @@ footer h3 {
 }
 
 .dados {
-    display: flex; /* Cria um layout flexível para as imagens */
-    gap: 10px; /* Espaço entre as imagens */
+    display: flex;
+    gap: 10px;
     margin-top: 12px;
     margin-left: 36px;
 }
 
 .dados img {
-    max-width: 100%; /* Tamanho reduzido para as imagens */
-    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%;
+    height: auto;
+}
+
+/*Responsividade*/
+
+@media (max-width: 768px) {
+
+    .formulario1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .formulario1 button {
+        margin-left: 0;
+        margin-top: 4px;
+    }
+    .formulario2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .formulario2 button {
+        margin-left: 0;
+        margin-top: 4px;
+    }
+
+    .formulario4 input {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .formulario4 button {
+        margin-left: 0;
+        margin-top: 4px;
+    }
+
+    .formulario5 input {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .formulario5 button {
+        margin-left: 0;
+        margin-top: 4px;
+    }
+
+    .formulario8 input {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .formulario8 button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
 }
