@@ -621,6 +621,10 @@ footer h3 {
         margin-top: 4px;
     }
 
+    .formulario6 {
+        grid-template-columns: repeat(4, 1fr); /* Altera para 4 colunas */
+    }
+
     .formulario8 input {
         display: flex;
         flex-direction: column;

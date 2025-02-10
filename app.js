@@ -567,7 +567,7 @@ function calcularCombustivel() {
     let resultado93 = document.querySelector('#resp9-3');
     let resultado94 = document.querySelector('#resp9-4');
 
-    let litros = destino / kmlitro;
+    let litros = matchMedia.ceil(destino / kmlitro);
 
     resultado91.innerHTML = ("Serão gastos " + litros + " litros de combustível no trajeto.");
 
@@ -589,7 +589,7 @@ function calcularCombustivel() {
     resultado93.innerHTML = ("Serão gastos R$ " + abastecimento + " com abastecimento.");
 
     abastecimentototal = (parada + 1) * capacidade;
-    sobratanque = abastecimentototal - litros;
+    sobratanque = Math.ceil(abastecimentototal - litros);
     
     resultado94.innerHTML = ("Ao final do trajeto, restarão " + sobratanque + " litros no tanque");
 
