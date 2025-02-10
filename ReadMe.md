@@ -3,7 +3,7 @@
 
 # 📚 **Exercícios de JavaScript para Iniciantes**
 
-![JavaScript Logo](https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg)
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="Logo JavaScript" height="200">
 
 Este repositório contém exercícios de JavaScript voltados para iniciantes.
 Cada exercício aborda conceitos básicos como variáveis, condicionais, loops, funções, arrays e manipulação do DOM.
