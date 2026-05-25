@@ -217,6 +217,10 @@ h1 {
     font-size: 18px;
 }
 
+.hidden {
+    display: none !important;
+}
+
 .formulario5 button {
     height: 42px;
     width: 96px;

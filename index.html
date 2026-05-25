@@ -84,8 +84,9 @@
             <p>Informe se houve premiação ou não.</p>
             <p>Em caso de premiação, liste quais os acertos e a quantidade de volantes premiados em cada faixa</p>
             <div class="formulario5">
-                <input id="ex5" class="megasena" placeholder="Digite a quantidade de números:">
-                <button onclick="calcularValor()">Calcular</button>
+                <input type="tel" maxlenght="2" id="ex5" oninput="validarDezenas(this)" class="megasena" placeholder="Digite a quantidade de números:">
+                <button id="btn-main" class="" onclick="calcularValor()">Calcular</button>
+                <button id="btn-scnd" class="hidden" onclick="reiniciarSimulacao()">Reiniciar</button>
                 <h3 id="resp5"></h3>
                 <div class="aposta" id="botao-gerar">
                 </div>

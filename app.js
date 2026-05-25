@@ -130,13 +130,57 @@ function qtdeQuadras(n, k) {
 }
 //UDFS
 
+function validarDezenas(input) {
+    input.value = input.value.replace(/\D/g, '');
+}
+
+function reiniciarSimulacao() {
+
+    console.log("Clique detetado!")
+
+    document.querySelector('#ex5').value = "";
+    
+    document.querySelector('#resp5').innerHTML = "";
+    document.querySelector('#surpresinha').innerHTML = "";
+    document.querySelector('#result-sorteio').innerHTML = "";
+    document.querySelector('#divulgacao').innerHTML = "";
+    document.querySelector('#sena').innerHTML = "";
+    document.querySelector('#quinas').innerHTML = "";
+    document.querySelector('#quadras').innerHTML = "";
+    
+    document.getElementById('botao-gerar').innerHTML = "";
+    document.getElementById('botao-sortear').innerHTML = "";
+    document.getElementById('botao-apurar').innerHTML = "";
+
+    document.getElementById('btn-main').classList.remove('hidden');
+    document.getElementById('btn-scnd').classList.add('hidden');
+
+}
+
 
 function calcularValor() {
+
     let quantidade = parseInt(document.querySelector('#ex5').value);
     let resultado5 = document.querySelector('#resp5');
+
+    if (quantidade === "" || isNaN(quantidade)) {
+        return;
+    }
+
+    if (quantidade < 6 || quantidade >20) {
+        resultado5.innerHTML = ("Quantidade inválida! Escolha um número entre 6 e 20.");
+        return
+    }
+
+    const btnPrincipal = document.getElementById('btn-main');
+
     let quantidadeTotal = Math.fatorial(quantidade) / (Math.fatorial(6) * Math.fatorial(quantidade - 6))
     let valorTotal = formatarReal(quantidadeTotal * 6);
     let chances = Math.ceil(50063860 / quantidadeTotal);
+
+    document.getElementById('btn-main').classList.add('hidden');
+    document.getElementById('btn-scnd').classList.remove('hidden');
+
     resultado5.innerHTML = ("O valor total da aposta será de " + valorTotal + " e a chance de acertar na mega-sena é de 1 em " + chances.toLocaleString('pt-BR') +".");
 
     const gerar = document.createElement('button');
@@ -147,6 +191,11 @@ function calcularValor() {
 }
 
 function gerarAposta() {
+
+    const btnGerar = event.target;
+    btnGerar.disabled = true;
+
+
     let maximo = 60;
     let lista = [];
     let quantidade = parseInt(document.querySelector('#ex5').value);
@@ -171,7 +220,7 @@ function gerarAposta() {
     volante.sort((a,b) => a - b);
     textoVolante = volante.join(" - ")
 
-    aAposta.innerHTML = ("Sua aposta supresinha é: " + textoVolante);
+    aAposta.innerHTML = ("Sua aposta surpresinha é: " + textoVolante);
 
     const sortear = document.createElement('button');
     sortear.textContent = "Sortear";
@@ -181,6 +230,9 @@ function gerarAposta() {
 }
 
 function sortearMega() {
+
+    const btnSortear = event.target;
+    btnSortear.disabled = true;
 
     let maximo = 60;
     let disponiveis = [];
@@ -216,6 +268,10 @@ function sortearMega() {
 }
 
 function apurarPremiacao() {
+
+    const btnApurar = event.target;
+    btnApurar.disabled = true;
+
     let apostados = [];
     let resultados = [];
     let bolinha = 0;
@@ -268,7 +324,7 @@ function apurarPremiacao() {
         quadras = qtdeQuadras(apostados.length, contagem);
     }
 
-    if (contagem < 4) {
+    if (contagem < 4 && contagem > 0) {
         premioSena.innerHTML = ("Não se enquadra em faixa de premiação.")
     }
 
