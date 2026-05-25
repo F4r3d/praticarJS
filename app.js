@@ -137,7 +137,7 @@ function calcularValor() {
     let quantidadeTotal = Math.fatorial(quantidade) / (Math.fatorial(6) * Math.fatorial(quantidade - 6))
     let valorTotal = formatarReal(quantidadeTotal * 6);
     let chances = Math.ceil(50063860 / quantidadeTotal);
-    resultado5.innerHTML = ("O valor total da aposta será de " + valorTotal + " e a chance de acertar na mega-sena é de 1 em " + chances +".");
+    resultado5.innerHTML = ("O valor total da aposta será de " + valorTotal + " e a chance de acertar na mega-sena é de 1 em " + chances.toLocaleString('pt-BR') +".");
 
     const gerar = document.createElement('button');
     gerar.textContent = "Gerar";
