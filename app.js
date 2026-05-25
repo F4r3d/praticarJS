@@ -135,7 +135,7 @@ function calcularValor() {
     let quantidade = parseInt(document.querySelector('#ex5').value);
     let resultado5 = document.querySelector('#resp5');
     let quantidadeTotal = Math.fatorial(quantidade) / (Math.fatorial(6) * Math.fatorial(quantidade - 6))
-    let valorTotal = formatarReal(quantidadeTotal * 5);
+    let valorTotal = formatarReal(quantidadeTotal * 6);
     let chances = Math.ceil(50063860 / quantidadeTotal);
     resultado5.innerHTML = ("O valor total da aposta será de " + valorTotal + " e a chance de acertar na mega-sena é de 1 em " + chances +".");
 
